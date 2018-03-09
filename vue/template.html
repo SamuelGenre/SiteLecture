@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Genre Samuel"/>
+
+      <title><?= $titre ?></title>   <!-- Élément spécifique -->
+
+      <link rel="stylesheet" href="./scripts/style.css" type="text/css">
+      <script type="text/javascript" src="./scripts/responsivevoice.js"></script>
+      <script type="text/javascript" src="./scripts/script.js"></script>
+      
+
+    </head>
+    <body>
+        <div id="titre">
+          <img src="./images/aillearn2.png" alt="Logo">
+          <div id="grostitre">Apprends à lire avec Ail Learn !</div>
+        </div>
+        <hr>
+
+        <div id="menu">
+           <ul>
+              <li><a href="index.php?action=alphabet">Alphabet <br/><br/><img src="./images/abc.png" onmouseover="dire('alphabet')" alt="ABC" id="imgmenu"></a></li>
+
+              <li><a href="index.php?action=syllabes">Syllabes <br/><br/><img src="./images/speaking.png" onmouseover="dire('syllabe')" alt="Logo" id="imgmenu"></a></li>
+
+              <li><a href="index.php?action=jeux">Jeux <br/><br/><img src="./images/beach-ball.png" onmouseover="dire('exerçons nous !')" alt="Logo" id="imgmenu"></a></li>
+           </ul>
+        </div>
+        <div id="bloc">
+          <div id="content">
+            <?= $contenu ?>
+          </div>
+        </div> <!-- #Fin du bloc de contenu -->
+        <hr>
+        <div id="pied">
+            <p>Créé par Genre Samuel. BTSSIO2 Lycée Pierre Poivre. 2018</p>
+        </div>
+    </body>
+</html>
