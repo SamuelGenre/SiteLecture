@@ -30,5 +30,7 @@ try {
 catch (Exception $e) {
     erreur($e->getMessage());
 }
+
+//test
 ?>
 
